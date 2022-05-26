@@ -19,7 +19,21 @@
     <div class="resultado"></div>
     
     <script>
-        let  
+         const select = document.querySelector('select');
+        const result = document.querySelector('.resultado');
+
+        select.addEventListener('change', () => {
+            const opt = select.value;
+            if(opt === 'chocolate') {
+               result.innerHTML = `Te gusta el sabor ${opt}`
+            } else if (opt === 'ron'){
+                result.innerHTML = `Te gusta el sabor ${opt}`
+            }else if (opt === 'vainilla'){
+                result.innerHTML = `Te gusta el sabor ${opt}`
+            } else {
+                result.innerHTML = '';
+            }
+        }); 
     </script>
     
 </body>
